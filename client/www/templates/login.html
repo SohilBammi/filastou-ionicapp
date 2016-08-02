@@ -1,0 +1,35 @@
+<ion-view title = "Login" hide-back-button = "True">
+
+            <form novalidate="novalidate" name="loginForm">
+                <div class="list list-inset">
+                    <label class="item item-input">
+                        <i class="icon ion-ios7-person"></i>
+                        <input type="text" name="email" placeholder="E-mail" ng-model="credentials.email"
+                               required>
+                    </label>
+                </div>
+                <div class="list list-inset">
+                    <label class="item item-input">
+                        <i class="icon ion-ios7-locked"></i>
+                        <input type="password" name="password" placeholder="Password" ng-model="credentials.password"
+                               required>
+                    </label>
+                </div>
+                <div class="padding text-center">
+                    <button class="button icon ion-log-in"
+                            ng-click="login()">
+                        SIGN IN
+                    </button>
+                </div>
+            </form>
+
+    <div class="bar bar-footer bar-clear">
+        <div class="padding text-center">
+                    <button class="button icon"
+                            ng-click="goToRegister()">
+                        Register
+                    </button>
+                </div>
+    </div>
+
+</ion-view>

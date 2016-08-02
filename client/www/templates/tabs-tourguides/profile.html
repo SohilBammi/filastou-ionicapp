@@ -1,0 +1,18 @@
+<ion-view view-title="Profile">
+	<ion-content class="padding">
+		<h1>TourGuide Profile </h1>
+		<h2>My Tours</h2>
+		<ion-item ng-repeat="tour in tours">
+		Tour {{tour}}!
+		</ion-item>
+
+		<div class="bar bar-footer bar-clear">
+	        <div class="padding text-center">
+                <button class="button icon"
+                        ng-click="createTour()">
+                    Create Tour
+                </button>
+            </div>
+    	</div>
+	</ion-content>
+</ion-view>

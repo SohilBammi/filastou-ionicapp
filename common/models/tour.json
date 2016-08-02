@@ -1,0 +1,53 @@
+{
+  "name": "Tour",
+  "plural": "Tours",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "location": {
+      "type": "string",
+      "required": true
+    },
+    "startTime": {
+      "type": "date",
+      "required": true
+    },
+    "endTime": {
+      "type": "date",
+      "required": true
+    },
+    "price": {
+      "type": "number",
+      "required": true
+    },
+    "tourguideId": {
+      "type": "number",
+      "required": true
+    },
+    "touristIds": {
+      "type": [
+        "number"
+      ],
+      "required": false
+    },
+    "category": {
+      "type": "string",
+      "required": false
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

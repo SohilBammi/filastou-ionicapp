@@ -1,0 +1,12 @@
+{
+  "db": {
+    "host": "localhost",
+    "port": 3306,
+    "database": "filastou_app_dev",
+    "username": "root",
+    "password": "*****",
+    "name": "db",
+    "connector": "mysql",
+    "user": "admin"
+  }
+}
