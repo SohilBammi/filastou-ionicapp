@@ -1,7 +1,7 @@
 angular.module('starter')
-    .controller('TourguideSettingsTabCtrl', function ($scope, $ionicPopup, $location) {
+    .controller('TourGuideSettingsTabCtrl', function ($scope, $ionicPopup, $location) {
       $scope.switch = function () {
-    		$location.path('/tourguide/profile');
+    		$location.path('/tourist-tabs/tourist/profile');
     	};
 
   });
