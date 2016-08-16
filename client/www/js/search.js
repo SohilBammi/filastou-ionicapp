@@ -1,6 +1,10 @@
 angular.module('starter')
     .controller('TouristSearchTabCtrl', function ($scope, Tour, Filuser, $ionicPopup, $location) {
-        Tour.find({limit: 5})
+        $scope.getId = function(id) {
+          console.log(id);  
+        };
+
+        Tour.find({filter: {limit:10}})
                 .$promise
                 .then(function (res) {
                     $scope.tours = res;

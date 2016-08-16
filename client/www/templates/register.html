@@ -1,35 +1,55 @@
-<ion-view title="Register" hide-back-button = "True">
-    <ion-content>
-        <form novalidate="novalidate" name="registerForm">
-            <div class="list list-inset">
-                <label class="item item-input">
-                    <i class="icon ion-ios7-person"></i>
-                    <input type="text" placeholder="Username" name="username" ng-model="registration.username" required>
-                </label>
-                <label class="item item-input">
-                    <i class="icon ion-ios7-person"></i>
-                    <input type="text" placeholder="First Name" name="firstName" ng-model="registration.firstName" required>
-                </label>
-                <label class="item item-input">
-                    <i class="icon ion-ios7-person"></i>
-                    <input type="text" placeholder="Last Name" name="lastName" ng-model="registration.lastName" required>
-                </label>
-                <label class="item item-input">
-                    <i class="icon ion-email"></i>
-                    <input type="email" placeholder="E-mail" name="email" ng-model="registration.email" required>
-                </label>
-                <label class="item item-input">
-                    <i class="icon ion-ios7-locked"></i>
-                    <input type="password" placeholder="Password" name="password" ng-model="registration.password"
-                           required>
-                </label>
+<ion-view title = "Register" hide-back-button = "True" class = "registration-bg">
+            <div class = "registration-logo-register-container">
+                <img class = "registration-logo" src = "img/filastou-logo.svg"></img>
             </div>
-            <div class="padding">
-                <button ng-disabled="!registerForm.$valid" ng-click="register()"
-                        class="button icon ion-compose button-block button-outline button-royal">
-                    Register
-                </button>
-            </div>
-        </form>
-    </ion-content>
+
+            <form novalidate="novalidate" name="registerForm">
+                <div class="registration-textbox">
+                    <label class="item item-input registration-textbox registration-input">
+                        <i class="icon ion-ios7-person"></i>
+                        <input style="color:white" class="registration-text" type="text" name="firstName" placeholder="First Name" ng-model="registration.firstName"
+                               required>
+                    </label>
+                </div>
+                <div class="registration-textbox">
+                    <label class="item item-input registration-textbox registration-input">
+                        <i class="icon ion-ios7-person"></i>
+                        <input style="color:white" class="registration-text" type="text" name="lastName" placeholder="Last Name" ng-model="registration.lastName"
+                               required>
+                    </label>
+                </div>
+                <div class="registration-textbox">
+                    <label class="item item-input registration-textbox registration-input">
+                        <i class="icon ion-ios7-person"></i>
+                        <input style="color:white" class="registration-text" type="text" name="email" placeholder="E-mail" ng-model="registration.email"
+                               required>
+                    </label>
+                </div>
+                <div class="registration-textbox">
+                    <label class="item item-input registration-textbox registration-input">
+                        <i class="icon ion-ios7-locked"></i>
+                        <input style="color:white" class="registration-text" type="password" name="password" placeholder="Password" ng-model="registration.password"
+                               required>
+                    </label>
+                </div>
+                <div class="registration-textbox">
+                    <label class="item item-input registration-textbox registration-input">
+                        <i class="icon ion-ios7-locked"></i>
+                        <input style="color:white" class="registration-text" type="password" name="confirmPass" placeholder="Confirm Password" ng-model="registration.confirmPass"
+                               required>
+                    </label>
+                </div>
+                <div class="padding text-center">
+                    <button class="registration-button"
+                            ng-disabled="!registerForm.$valid" ng-click="register()">
+                        Sign Up
+                    </button>
+                </div>
+                <div ng-click="goToLogin()" class = "registration-switch-text">Already have an account?</div>
+            </form>
+
+    <div class="bar bar-footer bar-clear">
+        <div class = "registration-footer-text"><center><strong>By signing</strong> up, <strong>you agree</strong> to <strong>our terms</strong> of use, <br> privacy policy, and cookie policy</center></div>
+    </div>
+
 </ion-view>

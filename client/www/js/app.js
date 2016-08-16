@@ -101,6 +101,16 @@ angular.module('starter', ['ionic', 'lbServices'])
                 templateUrl: 'templates/tabs-tourguides/newtour.html',
                 controller: 'NewTourCtrl'
             })
+            .state('tourguide-tourpage', {
+              url: '/tourguide/t/:tourId',
+              templateUrl: 'templates/tabs-tourguides/tourpage.html',
+              controller: 'TourGuideTourPageCtrl'
+            })
+            .state('tourist-tourpage', {
+              url: '/tourist/t/:tourId',
+              templateUrl: 'templates/tabs-tourists/tourpage.html',
+              controller: 'TouristTourPageCtrl'
+            })
             .state('login', {
                 url: '/login',
                 templateUrl: 'templates/login.html',

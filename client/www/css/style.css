@@ -1,1 +1,69 @@
-/* Empty. Add your own CSS if you like */
+/*Registration Sceens*/
+.registration-bg { 
+	background: url(../img/bg-registration.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.registration-textbox {
+	background-color: transparent;
+	border:none;
+	margin:10px;
+}
+
+.registration-input {
+	border-bottom: solid 1px;
+	color: #fff;
+}
+
+.registration-logo-login-container {
+	margin: 30px 0 150px 0;
+}
+
+.registration-logo-register-container {
+	margin: 30px 0 40px 0;
+}
+
+.registration-logo {
+	width: 30%;
+	max-height:150px;
+	display: block;
+	margin:0 auto;
+}
+
+.registration-button {
+	background-color: #35b39d;
+	color: #fff;
+	width:90%;
+	height:40px;
+	font-size: 16px;
+	border: none;
+	border-radius: 5px;
+}
+
+.registration-switch-text {
+	color: #fff;
+	text-align: center;
+}
+
+.registration-switch-text:hover {
+	cursor: pointer;
+}
+
+.registration-footer-text {
+	color: #fff;
+	display:block;
+	margin: 0 auto;
+	padding:10px;
+	margin-top:-30px;
+}
+
+.registration-text::-webkit-input-placeholder {
+  color: #fff ;
+}
+.registration-text::-moz-placeholder {
+  color:#fff ;
+}
+.registration-text:-ms-input-placeholder { /* IE10+ */
+  color: #fff ;
+}
+

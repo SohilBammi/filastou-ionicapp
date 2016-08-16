@@ -47,6 +47,10 @@ angular.module('starter')
                 });
         };
 
+        $scope.goToLogin = function () {
+            $location.path('/login');
+        };
+
         /**
          * @name showAlert()
          * @param {string} title

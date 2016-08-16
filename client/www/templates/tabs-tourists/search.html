@@ -2,7 +2,7 @@
 	<ion-content class="padding">
 		<ion-list>
 			<h1>Tours {{finlength}}</h1>
-			<ion-item ng-repeat="tour in tours">
+			<ion-item ng-repeat="tour in tours" ng-click="getId({{tour.id}})">
 			Tour {{tour}}!
 			</ion-item>
 		</ion-list>

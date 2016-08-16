@@ -1,35 +1,34 @@
-<ion-view title = "Login" hide-back-button = "True">
+<ion-view title = "Login" hide-back-button = "True" class = "registration-bg">
+            <div class = "registration-logo-login-container">
+                <img class = "registration-logo" src = "img/filastou-logo.svg"></img>
+            </div>
 
             <form novalidate="novalidate" name="loginForm">
-                <div class="list list-inset">
-                    <label class="item item-input">
+                <div class="registration-textbox">
+                    <label class="item item-input registration-textbox registration-input">
                         <i class="icon ion-ios7-person"></i>
-                        <input type="text" name="email" placeholder="E-mail" ng-model="credentials.email"
+                        <input style="color:white" class="registration-text" type="text" name="email" placeholder="E-mail" ng-model="credentials.email"
                                required>
                     </label>
                 </div>
-                <div class="list list-inset">
-                    <label class="item item-input">
+                <div class="registration-textbox">
+                    <label class="item item-input registration-textbox registration-input">
                         <i class="icon ion-ios7-locked"></i>
-                        <input type="password" name="password" placeholder="Password" ng-model="credentials.password"
+                        <input style="color:white" class="registration-text" type="password" name="password" placeholder="Password" ng-model="credentials.password"
                                required>
                     </label>
                 </div>
                 <div class="padding text-center">
-                    <button class="button icon ion-log-in"
+                    <button class="registration-button"
                             ng-click="login()">
-                        SIGN IN
+                        Sign In
                     </button>
                 </div>
+                <div ng-click="goToRegister()" class = "registration-switch-text">Don't have an account yet?</div>
             </form>
 
     <div class="bar bar-footer bar-clear">
-        <div class="padding text-center">
-                    <button class="button icon"
-                            ng-click="goToRegister()">
-                        Register
-                    </button>
-                </div>
+        <div class = "registration-footer-text"><center><strong>By signing</strong> up, <strong>you agree</strong> to <strong>our terms</strong> of use, <br> privacy policy, and cookie policy</center></div>
     </div>
 
 </ion-view>
