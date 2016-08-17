@@ -31,13 +31,13 @@
 }
 
 .registration-text::-webkit-input-placeholder {
-	color: #fff ;
+	color: #fff;
 }
 .registration-text::-moz-placeholder {
-	color:#fff ;
+	color:#fff;
 }
 .registration-text:-ms-input-placeholder { /* IE10+ */
-	color: #fff ;
+	color: #fff;
 }
 
 .registration-button {
@@ -118,7 +118,7 @@
 
 .settings-table {
 	display: table; 
-	height: 20%; 
+	height: 135px; 
 	width: 100%;
 	font-size: 20px;
 	overflow: hidden;
@@ -137,4 +137,94 @@
 	color: #000;
 	text-align: center;
 	background-color: #eeeeee;
+}
+
+/**********Tourist Profile**********/
+.tourist-profiletable {
+	display: table;
+	width: 94%;
+	border: none;
+	margin: 0 3% 0 3%;
+}
+
+.mytours-header {
+	display: table-cell;
+	font-size: 17px;
+	width: 100%;
+	height: 40px;
+	background-color: #eeeeee;
+	text-align:center;
+	vertical-align: middle;
+}
+
+.tourist-tourcell {
+	display: table-cell;
+	color: #fff;
+	width:100%;
+	height: 150px;
+	padding: 7%;
+	background-color: #eeeeee;
+	text-align:center;
+}
+
+.tourist-profile-info {
+	display: table-cell;
+	width: 100%;
+	height: 100px;
+	text-align: left;
+
+	color: #fff;
+}
+
+.tourist-profile-pic {
+	display: block;
+	float: left;
+	width: 30%;
+}
+
+.tourist-profile-img {
+	width: 100%;
+	margin-left: 25%;
+	max-height: 150px;
+}
+
+.tourist-profile-text {
+	display: block;
+	float: left;
+	color: #000;
+	font-size: 17px;
+	margin-top:4%;
+	width: 70%;
+	padding-left: 20%;
+}
+
+.tourist-tourcell-header {
+	display: block;
+	float: left;
+	width:50%;
+	vertical-align: middle;
+}
+
+.tourist-left-header {
+	text-align: left;
+	font-size: 17px;
+}
+
+.tourist-right-header {
+	text-align: right;
+	font-size: 17px;
+}
+
+.tourist-tourcell-entry {
+	min-height:100px;
+	padding-top: 30px;
+	font-size: 15px;
+	text-align: left;
+}
+
+.tourist-entry-space {
+	color: #fff;
+	background-color: #fff;
+	height: 12px;
+	width: 100%;
 }

@@ -37,7 +37,7 @@ angular.module('starter')
          $scope.login = function () {
             $scope.loginResult = Filuser.login({rememberMe: true}, $scope.credentials,
                 function () {
-                        var next = $location.nextAfterLogin || '/dashboard';
+                        var next = $location.nextAfterLogin || '/tourist-tabs/tourist/profile';
                         $location.nextAfterLogin = null;
                         $location.path(next);
                 },

@@ -1,5 +1,37 @@
 <ion-view view-title="Profile">
-	<ion-content class="padding">
-		<h1>Profile</h1>
+	<ion-content class>
+		<div class = "tourist-profiletable">
+			<div class = "tourist-profile-info">
+				<div class = "tourist-profile-pic">
+					<img class="tourist-profile-img" src ="../img/profile-img.svg">
+				</div>
+				<div class = "tourist-profile-text">
+					<p>First Name</p>
+					<p>Town</p>
+					<p>Member Since...</p>
+				</div>
+			</div>
+		</div>
+		<div class = "tourist-profiletable">
+			<div class = "mytours-header">
+				My tours
+			</div>
+		</div>
+		<div ng-repeat="tour in tours" ng-click="getId({{tour.id}})">
+			<div class = "tourist-entry-space"></div>
+			<div class = "tourist-profiletable">
+				<div class = "tourist-tourcell" ng-style="set_color($index)">
+					<div class = "tourist-tourcell-header tourist-left-header">
+						Tour {{$index+1}}
+					</div>
+					<div class = "tourist-tourcell-header tourist-right-header">
+						Town
+					</div>
+					<div class = "tourist-tourcell-entry">
+						This is the description.
+					</div>
+				</div>
+			</div>
+		</div>
 	</ion-content>
 </ion-view>

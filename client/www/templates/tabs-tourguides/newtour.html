@@ -1,48 +1,48 @@
 <ion-view title = "New Tour" hide-back-button = "False">
+    <ion-content>
+        <form novalidate="novalidate" name="newTourForm">
+            <div class="list list-inset">
+                <label class="item item-input">
+                    <i class="icon ion-ios7-person"></i>
+                    <input type="text" name="tour-name" placeholder="Name" ng-model="tourdetails.name"
+                           required>
+                </label>
+            </div>
+            <div class="list list-inset">
+                <label class="item item-input">
+                    <i class="icon ion-ios7-person"></i>
+                    <input type="text" name="tour-description" placeholder="Description" ng-model="tourdetails.description"
+                           required>
+                </label>
+            </div>
+            <div class="list list-inset">
+                <label class="item item-input">
+                    <i class="icon ion-ios7-person"></i>
+                    <input type="text" name="tour-location" placeholder="Location" ng-model="tourdetails.location"
+                           required>
+                </label>
+            </div>
+            <div class="list list-inset">
+                <label class="item item-input">
+                    <i class="icon ion-ios7-person"></i>
+                    <input type="text" name="tour-price" placeholder="Price" ng-model="tourdetails.price"
+                           required>
+                </label>
+            </div>
+            <div class="list list-inset">
+                <label class="item item-input">
+                    <i class="icon ion-ios7-person"></i>
+                    <input type="text" name="tour-category" placeholder="Category" ng-model="tourdetails.category"
+                           required>
+                </label>
+            </div>
+        </form>
 
-            <form novalidate="novalidate" name="newTourForm">
-                <div class="list list-inset">
-                    <label class="item item-input">
-                        <i class="icon ion-ios7-person"></i>
-                        <input type="text" name="tour-name" placeholder="Name" ng-model="tourdetails.name"
-                               required>
-                    </label>
-                </div>
-                <div class="list list-inset">
-                    <label class="item item-input">
-                        <i class="icon ion-ios7-person"></i>
-                        <input type="text" name="tour-description" placeholder="Description" ng-model="tourdetails.description"
-                               required>
-                    </label>
-                </div>
-                <div class="list list-inset">
-                    <label class="item item-input">
-                        <i class="icon ion-ios7-person"></i>
-                        <input type="text" name="tour-location" placeholder="Location" ng-model="tourdetails.location"
-                               required>
-                    </label>
-                </div>
-                <div class="list list-inset">
-                    <label class="item item-input">
-                        <i class="icon ion-ios7-person"></i>
-                        <input type="text" name="tour-price" placeholder="Price" ng-model="tourdetails.price"
-                               required>
-                    </label>
-                </div>
-                <div class="list list-inset">
-                    <label class="item item-input">
-                        <i class="icon ion-ios7-person"></i>
-                        <input type="text" name="tour-category" placeholder="Category" ng-model="tourdetails.category"
-                               required>
-                    </label>
-                </div>
-            </form>
-
-    <div class="padding text-center">
+        <div class="padding text-center">
             <button class="button icon"
                     ng-click="createTour()">
                 Create Tour
             </button>
         </div>
-
+    </ion-content>
 </ion-view>
