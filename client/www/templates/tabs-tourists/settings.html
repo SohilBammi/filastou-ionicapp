@@ -1,14 +1,24 @@
 <ion-view view-title="Settings">
-	<ion-content>
-		<div class="padding text-center">
-			<h1>Settings</h1>
+	<div class = "settings-content">
+		<div class="settings-table">
+			<div class="settings-entry" ng-click="switch()"> 
+				Switch to Guide
+			</div>
 		</div>
-
-    	<button class="button button-full button-positive" ng-click="switch()">
-		 	Switch
-		</button> 
-		<a class="button button-full button-positive" href="#/logout">
-		 	Logout
-		</a> 
-	</ion-content>
+		<div class="settings-table">
+			<div class="settings-entry">
+				Settings
+			</div>
+		</div>
+		<div class="settings-table">
+			<div class="settings-entry">
+				Learn More
+			</div>
+		</div>
+		<div class="settings-table" onclick="window.location='#/logout'">
+			<div class="settings-entry">
+				Logout
+			</div>
+		</div>
+	</div>
 </ion-view>

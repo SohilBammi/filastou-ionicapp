@@ -106,3 +106,31 @@
 .tabs {
 	border:none;
 }
+
+.settings-table{
+	display: table; 
+	height: 20%; 
+	width:100%;
+	font-size: 20px;
+	overflow: hidden;
+	margin: 4% 0 4% 0;
+}
+
+.settings-table:hover{
+	cursor: pointer;
+}
+
+.settings-entry {
+	display: table-cell; 
+	vertical-align: middle;
+	width: 100%;
+	height:20%;
+	color: #000;
+	text-align:center;
+	background-color: #eeeeee;
+}
+
+.settings-content {
+	height:100%;
+	margin: 4% 3% 0% 3%;
+}
